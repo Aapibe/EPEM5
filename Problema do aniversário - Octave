@@ -1,0 +1,15 @@
+n = input("Qual numero de pessoas? ");
+
+z = 365;
+y = 365; 
+ 
+for i = 1:(n-1)
+
+y = y-1;
+z = z*y;
+
+end
+
+x = (1 - z/(365^n))100;
+
+disp(["A probabilidade dessas pessoas fazerem aniversario no mesmo dia eh de: ", num2str(x), "%"])
